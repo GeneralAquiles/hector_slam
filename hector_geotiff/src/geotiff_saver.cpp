@@ -26,15 +26,19 @@
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //=================================================================================================
 
-#include "hector_geotiff/geotiff_writer.h"
-
 #include <cstdio>
-#include <ros/ros.h>
-#include <ros/console.h>
+#include "ros/ros.h"
+#include "ros/console.h"
+#include "nav_msgs/GetMap.h"
+#include "geometry_msgs/Quaternion.h"
 
-#include <nav_msgs/GetMap.h>
+#include <Eigen/Geometry>
 
-#include <QApplication>
+#include <QtGui/QApplication>
+
+#include <hector_map_tools/HectorMapTools.h>
+
+#include <hector_geotiff/geotiff_writer.h>
 
 using namespace std;
 
